@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="csrf-token" content="3pudybwsl3CB6ap4VEGp9sbcYuyuPX16PmefkJ9R" />
+  <title> Roles
+    | ATI consulting portal</title>
+  <!-- Bootstrap 4.1.1 -->
+  <link href="https://portal.aticonsultingagency.com/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- Ionicons -->
+
+  <!-- <link href="https://portal.aticonsultingagency.com/assets/css/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- Template CSS -->
+  <!-- <link rel="stylesheet" href="https://portal.aticonsultingagency.com/web/css/style.css"> -->
+  <!-- <link href="https://portal.aticonsultingagency.com/assets/style/css/style.css?id=d48c10b4a661644e90c7" rel="stylesheet" type="text/css" /> -->
+
+  <style>
+    .card-webmarko-user-email {
+      color: #34395e;
+      font-size: 12px;
+      font-weight: 600;
+      height: auto;
+      letter-spacing: .5px;
+      line-height: 20px !important;
+      overflow: hidden;
+      width: auto
+    }
+
+    .client-card-webmarko-name,
+    .user-card-webmarko-name {
+      margin-right: auto
+    }
+
+    .card-webmarko-client-website {
+      font-size: 12px;
+      font-weight: 600;
+      height: auto;
+      letter-spacing: .5px;
+      line-height: 20px !important;
+      overflow: hidden;
+      width: 180px
+    }
+
+    .user-card-webmarko-index {
+      padding: 15px 15px 2px !important
+    }
+
+    .email-verified {
+      color: #6be295
+    }
+
+    .hover-card-webmarko {
+      transition-duration: .6s
+    }
+
+    .link-a {
+      color: #6777ef;
+      font-weight: 500;
+      transition: all .5s;
+      -webkit-transition: all .5s;
+      -o-transition: all .5s;
+    }
+
+    .link-a:not(.btn-social-icon):not(.btn-social):not(.page-link) .ion,
+    .link-a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fas,
+    .link-a:not(.btn-social-icon):not(.btn-social):not(.page-link) .far,
+    .link-a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fal,
+    .link-a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
+      margin-left: 4px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+    }
+
+    .shadow {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    .card-webmarko {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+      background-color: #fff;
+      border-radius: 3px;
+      border: none;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .card-webmarko .card-webmarko-header,
+    .card-webmarko .card-webmarko-body,
+    .card-webmarko .card-webmarko-footer {
+      background-color: transparent;
+      padding: 20px 25px;
+    }
+
+    .card-webmarko .card-webmarko-body {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .card-webmarko .card-webmarko-header {
+      border-bottom-color: #f9f9f9;
+      line-height: 30px;
+      -ms-grid-row-align: center;
+      align-self: center;
+      width: 100%;
+      min-height: 70px;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+    }
+
+    .card-webmarko .card-webmarko-header h4 {
+      font-size: 16px;
+      line-height: 28px;
+      color: #6777ef;
+      padding-right: 10px;
+      margin-bottom: 0;
+    }
+
+    .card-webmarko.card-webmarko-primary {
+      border-top: 2px solid #6777ef;
+    }
+
+    .badge {
+      vertical-align: middle;
+      padding: 7px 12px;
+      font-weight: 600;
+      letter-spacing: .3px;
+      border-radius: 30px;
+      font-size: 12px;
+    }
+
+    .badge.badge-primary {
+      background-color: #6777ef;
+    }
+
+    .badge.badge-dark {
+      background-color: #191d21;
+    }
+
+    .dropdown-menu {
+      box-shadow: 0 10px 40px 0 rgba(51, 73, 94, 0.15);
+      border: none;
+      width: 200px;
+    }
+
+    :root {
+      /* Colors */
+      --primary: #6777ef;
+      --secondary: #34395e;
+      --success: #47c363;
+      --info: #3abaf4;
+      --warning: #ffa426;
+      --danger: #fc544b;
+      --light: #e3eaef;
+      --dark: #191d21;
+    }
+
+    body,
+    html {
+      min-height: 100%;
+    }
+
+    body {
+      background-color: #f4f6f9;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Nunito", "Segoe UI", arial;
+      color: #6c757d;
+    }
+
+    .fas,
+    .far,
+    .fab,
+    .fal {
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-4 extra-large">
+    <div
+      class="livewire-card-webmarko card-webmarko card-webmarko-primary shadow mb-5 rounded user-card-webmarko-view hover-card-webmarko">
+      <div class="card-webmarko-header d-flex align-items-center user-card-webmarko-index d-sm-flex-wrap-0">
+        <div class="author-box-left pl-0 mb-auto">
+          <img alt="image" width="50"
+            src="https://ui-avatars.com/api/?name=Ati-Admin&amp;size=64&amp;rounded=true&amp;color=fff&amp;background=fc6369"
+            class="rounded-circle user-avatar-image uAvatar">
+          <div class="mt-2 ml-2 userActiveDeActiveChk">
+          </div>
+        </div>
+        <div class="ml-2 w-100 mb-auto">
+          <div class="justify-content-between d-flex">
+            <div class="user-card-webmarko-name pb-1">
+              <a class="link-a" href="https://portal.aticonsultingagency.com/users/1">
+                <h4>Ati-Admin</h4>
+              </a>
+            </div>
+            <a class="dropdown link-a dropdown-list-toggle">
+            </a><a href="#" data-toggle="dropdown"
+              class=" link-a notification-toggle action-dropdown position-xs-bottom">
+              <i class="fas fa-ellipsis-v action-toggle-mr"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-list-content dropdown-list-icons">
+                <a href="#" class=" link-a dropdown-item dropdown-item-desc edit-btn" data-id="1"><i
+                    class="fas fa-edit mr-2 card-webmarko-edit-icon"></i> Edit
+                </a>
+                <a href="#" class=" link-a dropdown-item dropdown-item-desc delete-btn" data-id="1"><i
+                    class="fas fa-trash mr-2 card-webmarko-delete-icon"></i>Delete
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="card-webmarko-client-website ">
+            Admin
+          </div>
+          <div class="card-webmarko-user-email pt-1 mb-3">
+            admin@aticonsultingagency.com
+            <span data-toggle="tooltip" title="" data-original-title="Email is verified"><i
+                class="fas fa-check-circle email-verified"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="card-webmarko-body d-flex align-items-center pt-0 pl-3">
+        <div class="mr-3">
+          <span class="badge badge-primary text-uppercase">1</span> Projects
+        </div>
+        <div>
+          <span class="badge badge-dark text-uppercase">3</span> Tasks Active
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
